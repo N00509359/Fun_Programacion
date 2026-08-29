@@ -3,7 +3,7 @@ Repositorio para el curso de aprendizaje de los lenguajes de programación C# Y 
 
 ## Lenguajes de Programacion
 1. Python
-CSharp (C#)
+2. Csharp (C#)
 
 ## Software a utilizar
 1. Git

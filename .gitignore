@@ -1,0 +1,19 @@
+# Archivo de Credenciales
+.env
+
+# Archivos entorno virtual
+venv/
+myenv/
+
+# Archivos temporales
+_pycache_
+
+# Archivos de extension
+*._pyc
+
+# Archivos CSsharp o carpetas
+
+Properties/
+obj/
+bin/
+.vs/
