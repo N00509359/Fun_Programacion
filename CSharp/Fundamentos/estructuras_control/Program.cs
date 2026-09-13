@@ -13,65 +13,67 @@ namespace estructuras_control
             Console.WriteLine("estructuras de control");
 
             // Secuencial
-           
             Console.WriteLine("Ingrese su nombre: ");
             string nombre = Console.ReadLine();
-            Console.WriteLine("ingrese su edad:  ");
+            Console.WriteLine("Ingrese su edad: ");
             int edad = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Nombre: {nombre}, edad: {edad}");
+            Console.WriteLine($"Nombre: {nombre}, Edad: {edad}");
+
             // Condicionales
-            //simple
-            if (edad < 18)
-            { 
-                Console.WriteLine("ERES MAYOR DE EDAD"); 
-            }
-             // doble
-             if (edad >=18)
-            { 
+            // Simple
+            if (edad < 18) {
                 Console.WriteLine("Eres menor de edad");
-             else 
-                { 
-                  Console.WriteLine("eres menor de edad");
-                }
-                // condicional multiple
-                Console.WriteLine("Ingrese un numero del 1 al 3");
-                switch (opcion)
-                {
-                    case 1: Console.WriteLine("opc 1");
-                    case 2: Console.WriteLine("opc 2");
-                    case 2: Console.WriteLine("opc 3");
-                    default: Console.WriteLine("Opcion Invalida");
-                        break;
+            }
 
-                }
-                // condicional anidado
-                if (opcion == 1)
-                {
-                    Console.WriteLine("eligio opc 1");
+            // Doble
+            if (edad >= 18){
+                Console.WriteLine("Eres mayor de edad");
+            }
+            else {
+                Console.WriteLine("Eres menor de edad");
+            }
 
-                }
-                else if (opcion == 2) { Console.WriteLine("eligio opc 2");
-                }
-                else
-                {
-                    Console.WriteLine("eligio la opc 3");
+            // Condicional Multiple
+            Console.WriteLine("Ingrese un numero del 1 al 3: ");
+            int opcion = int.Parse(Console.ReadLine());
+            switch (opcion) {
+                case 1: Console.WriteLine("Opcion 1"); break;
+                case 2: Console.WriteLine("Opcion 2"); break;
+                case 3: Console.WriteLine("Opcion 3"); break;
+                default: Console.WriteLine("Opcion Invalida"); break;
+            }
 
-                }
-                // Repetitivas
-                // for
-                for (int i = 0; i < edad; i++) {
-                    Console.WriteLine($"numero: {i}");
-                }
-                // while
-                int contador = 1;
-                while (contador <=3)
-                {
-                    Console.WriteLine($"intento: {contador}");
-                    contador++;
+            // Condicional Anidado
+            if (opcion == 1) {
+                Console.WriteLine("Eligio Opcion 1");
+            }
+            else if (opcion == 2) {
+                Console.WriteLine("Eligio Opcion 2");
+            }
+            else {
+                Console.WriteLine("Eligio Opcion 3");
+            }
 
-                }
-                // do while
-                int contador2 = 1;
+            // Repetitivos
+            // For
+            for (int i = 0; i < 10; i++) {
+                Console.Write($"Numero: {i}");
+            }
+            // While
+            int contador = 1;
+            while (contador <= 3) { 
+                Console.WriteLine($"Intento:{contador}");
+                contador ++;
+            }
+
+
+            // Do While
+            int contador2 = 1;
+            do {
+                Console.WriteLine($"Intento: {contador2}");
+                contador2 ++;
+            } while (contador2<=3);
+
         }
     }
 }
