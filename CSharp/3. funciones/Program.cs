@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 Console.WriteLine("-- Funciones");
 static void saludar()
@@ -66,3 +68,25 @@ static double proceso_compra(double monto)
 }
 double venta = proceso_compra(550);
 Console.WriteLine($"total a pagar s/ {venta}");
+
+Console.WriteLine("--funciones con parametros por valor--");
+Console.WriteLine(" ---------------------");
+static void incrementar(int numero)
+{
+    numero = numero + 5;
+    Console.WriteLine($"dentro de la funcion; {numero}");
+}
+int z=25;
+incrementar(z);
+Console.WriteLine($" fuera de la funcion; {z}");
+
+Console.WriteLine("--funciones con parametros por por referencia--");
+Console.WriteLine(" ---------------------");
+static void incrementar_referencia(ref int numero)
+{
+    numero = numero +10;
+    Console.WriteLine($"dentro de la funcion:{numero}");
+}
+int y=30;
+incrementar_referencia(ref y);
+Console.WriteLine($"fuera de la funcion: {y}");
