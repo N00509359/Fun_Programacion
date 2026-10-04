@@ -36,32 +36,55 @@ print ("Recorriendo una cadena")
 for i in range(len(mensaje)):
     print(f'{i}->{mensaje[i]}')
 
-#Ejercicio 
-"""
-Leel un codigo de estudiante y su carrera
-Forma una etiqueta
-Mostrar la longitud codigo, carrera, etiqueta
-Mostrar primer y ultimo caracter del codigo
-Recorrer cada letra de la carrera
-Crear una etiquetra nueva agregando el semestre sin alterar la original
-"""
 
-codigo= input("Ingrese su codigo: ")
-carrera= input("Ingrese su carrera: ")
-etiqueta = codigo +"  |" + carrera
-etiqueta_periodo = etiqueta + "|2026-2"
+print ("Metodos para trabajar en cadenas")
+# Find
+# Slicing
+# Split
+
+nombre = "Raquel,Valdez"
+posicion_coma=nombre.find(",")
+
+print(f'La coma esta en la posicion: {posicion_coma}')
+
+#Slicing (extraer subcadena)
+
+email = "N0000000@sistemas.PE"
+posicion_arroba=email.find("@")
+usuario = email [:posicion_arroba]
+dominio = email[posicion_arroba +1:]
+
+print (f'Usuario: {usuario}')
+print(f'Dominio: {dominio}')
 
 
-print (etiqueta)
-print(f'Longitud del codigo: {len(codigo)}')
-print(f'Longitud de la carrera: {len(carrera)}')
-print(f'Longitud de la etiqueta: {len(etiqueta)}')
+#split 
+nombre_curso ="BigData y Base de Datos Avanzada"
+partes = nombre_curso.split(" ")
+print(partes)
+print(partes[0])
+print(partes[1])
+print(partes[2])
+print(partes[3])
+print(partes[4])
+print(partes[5])
 
-if len(codigo)>0:
-    print(f'Primer caracter: {codigo[0]}')
-    print(f'Ultimo craracter: {codigo[len(codigo)-1]}')
 
-print("Recorriendo la carrera")
-for i in range(len(carrera)):
-    print(f'{i}-> {carrera[i]}')
+#Replace 
+telefono = "+51--987-654-321"
+telefono_clean = telefono.replace("-", "")
+print(f' Telefono limpio: {telefono_clean}')
 
+# Uper poner a mayusculas
+nombre_mayuscula = nombre.upper()
+print(nombre_mayuscula)
+
+#Lower poner a minusculas 
+nombre_minuscula = nombre.lower()
+print(nombre_minuscula)
+
+# Strip (Espacios en blanco)
+palabra = "    Aprendiendo Python    "
+palabra_limpia = palabra.strip()
+
+print(f'{palabra_limpia}')
