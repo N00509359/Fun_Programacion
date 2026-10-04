@@ -15,7 +15,7 @@ matriz2 =[
 ]
 
 print(matriz2)
-print(matriz2[1][2])
+print(matriz2[1][2]) 
 
 # Recorrer la matriz
 for fila in range(len(matriz2)):
