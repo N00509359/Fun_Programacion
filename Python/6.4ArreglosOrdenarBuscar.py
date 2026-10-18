@@ -64,6 +64,9 @@ print(nombres4)
 Crear un arreglo Y desarrollar todos los metodos
 """
 #Busqueda Exacta - Equals
+#Busqueda Sensible a Mayusculas y Minusculas
+#Busqueda de subcadenas
+#Busqueda de Expresion Regular
 #Busqueda Ultima posicion - LastIndexof
 #Busqueda Ultima posicion - Indexof
 #Busqueda empieza tecxto especifico - startswitch
