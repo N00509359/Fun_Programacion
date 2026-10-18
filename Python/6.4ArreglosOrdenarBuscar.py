@@ -57,3 +57,14 @@ for i in range(1,len(nombres4)):
     nombres4[j+1]=actual
 
 print(nombres4)
+
+
+#PDF 4.4 Busqueda
+""" 
+Crear un arreglo Y desarrollar todos los metodos
+"""
+#Busqueda Exacta - Equals
+#Busqueda Ultima posicion - LastIndexof
+#Busqueda Ultima posicion - Indexof
+#Busqueda empieza tecxto especifico - startswitch
+#Busqueda termina tecxto especifico - endtswitch
