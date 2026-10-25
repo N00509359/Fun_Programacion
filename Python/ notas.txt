@@ -1,0 +1,3 @@
+Estudiante: Susana
+Nota: 17
+Estado: Aprobado
